@@ -12,6 +12,7 @@ function Home() {
     return (
         <Router>
             <div className="flex min-h-screen bg-gray-200">
+                
                     <sidebar className="w-[20%] min-w-[150px] max-w-[200px]">
                         <Navbar/>
                     </sidebar>
