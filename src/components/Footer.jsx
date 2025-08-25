@@ -2,11 +2,9 @@
 
 function Footer() {
     return (
-        <>
-            <div>
-                this is footer
-            </div>
-        </>
+        <div className="">
+            this is footer
+        </div>
     )
 }
 
