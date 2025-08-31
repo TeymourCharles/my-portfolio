@@ -9,10 +9,10 @@ function Navbar() {
             </div>
             <div className="flex flex-col items-center">
                 <h6 className="font-bold">Teymour Charles S. Villanueva</h6>
-                <h6>Front-End Developer</h6>
+                <h6>Full-stack Developer</h6>
             </div>
             <div className="flex justify-center">
-                <button type="button" className="border-2 rounded-lg py-1 px-2 w-[50%] min-w-[100px] border-gray-300 text-gray-500">Resume</button>
+                <button type="button" className="border-2 rounded-lg py-1 px-2 w-[100%] min-w-[100px] border-gray-300 text-gray-500">Resume</button>
             </div>
             <div className="">
                 <div className="">
