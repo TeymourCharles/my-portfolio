@@ -10,13 +10,13 @@ import Footer from '../components/Footer'
 
 function Home() {
     return (
-        <div className="flex min-h-screen">
+        <div className="flex flex-row gap-[2px] min-h-screen">
             
-                <aside className="w-[30%] min-w-[200px] max-w-[240px] bg-white m-[7px] p-2 rounded-lg">
+                <aside className="flex w-[30%] my-[5px] min-w-[200px] max-w-[240px] bg-white dark:bg-neutral-800 p-2 rounded-sm">
                     <Navbar/>
                 </aside>
-                <div className="flex flex-col min-h-screen flex-1">
-                    <main className="flex-1 m-[7px] rounded-lg">
+                <div className="flex flex-col min-h-screen max-h-screen overflow-auto flex-1">
+                    <main className="flex-1 m-[5px] rounded-lg">
                         <Routes>
                             <Route path="/" element={<Hero />} />
                             <Route path="/about" element={<About />} />

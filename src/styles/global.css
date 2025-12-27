@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-iceGray: #EBF1F4;
 }
@@ -9,7 +11,7 @@
   }
 
   body{
-    @apply bg-iceGray p-1;
+    @apply bg-iceGray dark:bg-black p-1 overflow-hidden;
   }
 
   h1 {
