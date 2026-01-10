@@ -2,7 +2,7 @@ import StatsIcon from "../assets/icon_components/StatsIcon";
 import YearsIcon from "../assets/icon_components/YearsIcon";
 import ProjectsIcon from "../assets/icon_components/ProjectsIcon";
 import TechnologyIcon from "../assets/icon_components/TechnologyIcon";
-import CardCareerStats from "./CardCareerStats";
+import CardCareerStats from "./career/CardCareerStats";
 
 function CareerStats() {
     return (

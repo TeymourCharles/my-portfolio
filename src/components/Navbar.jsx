@@ -20,8 +20,8 @@ function Navbar() {
                 <h6>Full-stack Developer</h6>
             </div>
             <div className="flex justify-center">
-                <button type="button" className="flex justify-center active:scale-95 duration-200 gap-2 border-2 rounded-lg py-[5px] px-2 w-[100%] min-w-[100px] border-gray-300 text-gray-500 dark:text-white">
-                    <DownloadIcon size={18} className="text-gray dark:text-white"/>
+                <button type="button" className="flex justify-center active:scale-95 duration-200 gap-2 border rounded-lg py-[5px] px-2 w-[100%] min-w-[100px] border-black dark:border-white text-black dark:text-white">
+                    <DownloadIcon size={18} className="text-black dark:text-white"/>
 
                     Download Resume
                 </button>

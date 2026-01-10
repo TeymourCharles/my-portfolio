@@ -15,7 +15,7 @@ function Home() {
                 <aside className="flex w-[30%] my-[5px] min-w-[200px] max-w-[240px] bg-white dark:bg-neutral-800 p-2 rounded-sm">
                     <Navbar/>
                 </aside>
-                <div className="flex flex-col min-h-screen max-h-screen overflow-auto flex-1">
+                <div className="flex flex-col min-h-screen max-h-screen overflow-y-auto overflow-x-hidden flex-1">
                     <main className="flex-1 m-[5px] rounded-lg">
                         <Routes>
                             <Route path="/" element={<Hero />} />

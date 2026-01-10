@@ -1,7 +1,15 @@
 import Education from "../components/Education";
 import Footer from "../components/Footer";
 import Experience from "../components/Experience";
+import { motion } from "motion/react";
+
 import { useState } from "react";
+
+import LocationIcon from "../assets/icon_components/LocationIcon"
+import MessageIcon from "../assets/icon_components/MessageIcon";
+import heroBanner3 from "../assets/images/hero-banner/pexels-luis-gomes-166706-546819.jpg";
+import MyImage from '../assets/images/my-profile.jpg'
+
 
 function About() {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -24,13 +32,30 @@ function About() {
      
             <div className="flex flex-row gap-[8px] h-[720px] text-black dark:text-white">
                 <div className="flex flex-col gap-[8px] w-[70%]">
-                    <div className="bg-white dark:bg-neutral-800 w-full h-[41%] rounded-sm p-2">
-                        This is about us page
+                    <div className="relative bg-white dark:bg-neutral-800 w-full h-[41%] rounded-sm">
+                        <div className="overflow-hidden h-[50%] flex justify-center items-center rounded-t-sm">
+                            <img src={heroBanner3} alt="" />
+                        </div>
+                        <div className="p-1 bg-white dark:bg-neutral-800 absolute top-28 left-10 flex justify-center items-center rounded-full overflow-hidden max-h-[100px] max-w-[100px]">
+                            <img src={MyImage} alt="my image" className="w-[100%] h-[100%] rounded-full"/>
+                        </div>
+                        <div className="flex flex-col max-w-[30%] gap-3 mx-[150px] py-[10px]">
+                            <div className="flex gap-2">
+                                <LocationIcon/>
+                                <h6>Sampaloc Manila City</h6>
+                            </div>
+                            <button type="button" className="flex justify-center items-center min-w-[100px] w-[60%] gap-2 py-1 border border-gray-400 rounded-full px-3">
+                                <MessageIcon/>
+                                Message
+                            </button>
+                        </div>
                     </div>
                     
-                    <div className={`relative overflow-hidden bg-white pb-15 dark:bg-neutral-800 pt-[15px] px-[20px] rounded-sm 
-                          transition-[max-height] duration-600 ease-in-out
-                        ${isExpanded ? "max-h-[400px]" : "max-h-[123px]"}`}>
+                    <motion.div className="relative overflow-hidden bg-white dark:bg-neutral-800 px-5 pt-4 pb-20 rounded-sm"
+                        initial={false}
+                        animate={{ maxHeight: isExpanded ? 400 : 120 }}
+                        transition={{ duration: 0.4, ease: "easeInOut" }}
+                        >
                         <h5 className="pb-2">About</h5>
                         <p className="leading-relaxed">
                             {text}
@@ -43,7 +68,7 @@ function About() {
                         >
                         {isExpanded ? "See Less" : "See More"}
                         </span>
-                    </div>
+                    </motion.div>
                     
                     <footer className="flex justify-center bg-white dark:bg-neutral-800 p-2 rounded-sm h-[25%]">
                         <Footer/>
