@@ -44,7 +44,7 @@ function About() {
                                 <LocationIcon/>
                                 <h6>Sampaloc Manila City</h6>
                             </div>
-                            <button type="button" className="flex justify-center items-center min-w-[100px] w-[60%] gap-2 py-1 border border-gray-400 rounded-full px-3">
+                            <button type="button" className="flex justify-center items-center gap-4 min-w-[100px] w-[60%] py-1 border border-gray-400 rounded-full px-3">
                                 <MessageIcon/>
                                 Message
                             </button>
@@ -78,7 +78,7 @@ function About() {
                     <div className="h-[50%] bg-white dark:bg-neutral-800 rounded-sm p-2">
                         <Education/>
                     </div>
-                    <div className="h-[50%] bg-white dark:bg-neutral-800 rounded-sm p-2">
+                    <div className="min-h-[300px] bg-white dark:bg-neutral-800 rounded-sm p-2">
                         <Experience/>
                     </div>
                 </div>
