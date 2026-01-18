@@ -44,7 +44,7 @@ function About() {
                                 <LocationIcon/>
                                 <h6>Metro Manila, Philippines</h6>
                             </div>
-                            <button type="button" className="flex justify-center text-white w-[100%] max-w-[140px] items-center gap-4 py-1 border border-blue-400 rounded-md px-3">
+                            <button type="button" className="flex justify-center active:text-blue-400 active:scale-95 duration-200 text-white w-[100%] max-w-[140px] items-center gap-4 py-1 border border-blue-400 rounded-md px-3">
                                 <MessageIcon/>
                                 Message
                             </button>

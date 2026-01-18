@@ -5,19 +5,13 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import DateIcon from "../assets/icon_components/DateIcon";
 
-const text = `I’m a Frontend Developer with hands-on experience in React and Vue, 
-                passionate about building responsive, user-friendly web applications that 
-                solve real-world problems. Beyond frontend development, I have experience 
-                creating backend APIs, integrating databases, and ensuring smooth communication 
-                between client and server. I am also comfortable deploying projects, setting up 
-                environments, and managing applications in live production, which gives me a full-stack
-                perspective on web development.
-
-                I enjoy working on scalable solutions, optimizing performance, and writing clean, 
-                maintainable code. I thrive in collaborative environments, learning from real-world 
-                challenges, and continuously improving my skills by exploring new frameworks, tools, and 
-                technologies. My goal is to create web applications that not only look great but also deliver
-                    seamless functionality and performance for both users and businesses.`
+const text = `During my time at Authentic Caps Distribution Inc., I significantly developed my technical 
+and professional skills by working on real-world corporate and internal systems. I strengthened my front-end 
+expertise by building responsive, reusable UI components and improving user experience across multiple platforms,
+ while also gaining full-stack exposure through implementing REST APIs, authentication, and database logic.
+  I expanded my understanding of modern web architecture by working with CMS integration, containerization using Docker,
+   and tools such as Kong, Kafka, and Temporal. Through close collaboration with stakeholders and continuous hands-on development, 
+   I improved my problem-solving, system design, and ability to deliver scalable, production-ready web solutions.`
 
 function Experience () {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -30,8 +24,8 @@ function Experience () {
                 <h5>Experience</h5>
             </div>
             <div className="overflow-y-auto max-h-[300px] rounded-md dark:bg-transparent ">
-                <div className="flex gap-3">
-                    <div className="min-w-[55px]">
+                <div className="flex gap-3 px-2">
+                    <div className="min-w-[53px]">
                         <div className="rounded-sm py-1">
                             <img
                                 src={AcdBlack}
@@ -61,7 +55,7 @@ function Experience () {
                         <motion.div className="relative overflow-hidden dark:bg-neutral-800 pb-20 rounded-sm"
                             initial={false}
                             animate={{ 
-                                maxHeight: isExpanded ? 550 : 100 
+                                maxHeight: isExpanded ? 510 : 100 
 
                             }}
                             transition={{ duration: 0.4, ease: "easeInOut" }}

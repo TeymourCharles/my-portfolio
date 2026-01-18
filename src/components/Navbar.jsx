@@ -3,6 +3,7 @@ import ThemeToggle from "./ThemeToggle";
 
 
 import MyImage from '../assets/images/my-profile.jpg'
+import ResumeIcon from "../assets/icon_components/ResumeIcon";
 import DownloadIcon from "../assets/icon_components/DownloadIcon";
 
 
@@ -20,12 +21,18 @@ function Navbar() {
                 <h6>Full-stack Developer</h6>
             </div>
             <div className="flex justify-center">
-                <button type="button" className="flex justify-center bg-gradient-to-r from-blue-700 to-blue-400 transition-all duration-500
-             hover:from-blue-500 hover:to-blue-300 active:scale-95 gap-2 rounded-lg py-[5px] px-2 w-[100%] min-w-[100px] border-black dark:border-white text-white">
-                    <DownloadIcon size={18} className="text-white"/>
+                <div className="flex justify-center w-[100%] max-w-[200px]">
+                        <button type="button" className="flex justify-center items-center bg-gradient-to-r to-blue-700 from-blue-400 transition-all duration-500
+                    hover:to-blue-600 hover:from-blue-300 gap-2 rounded-l-lg py-[4px] px-2 w-full  border-black dark:border-white text-white">
+                            <ResumeIcon size={18} className="text-white"/>
 
-                    Download Resume
-                </button>
+                            Preview Resume
+                        </button>
+                        <button className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-r-lg px-3 hover:from-blue-500 to-blue-700">
+                            <DownloadIcon size={17} className="text-white"/>
+                        </button>
+                </div>
+                
             </div>
             <div className="">
                 <div className="">
