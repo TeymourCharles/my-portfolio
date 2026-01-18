@@ -42,10 +42,10 @@ function Hero() {
                     
                 </Swiper>
             </div>
-            <div className="h-[27%] bg-white dark:bg-neutral-800 py-[15px] px-[20px] rounded-sm p-2">
+            <div className="bg-white dark:bg-neutral-800 py-[15px] px-[20px] rounded-sm p-2">
                 <CareerStats/>
             </div>
-            <footer className="flex justify-center bg-white dark:bg-neutral-800 p-2 rounded-sm h-[25%]">
+            <footer className="bg-white dark:bg-neutral-800 p-2 rounded-sm h-[25%]">
                 <Footer/>
             </footer>
         </div>

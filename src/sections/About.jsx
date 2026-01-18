@@ -33,22 +33,23 @@ function About() {
             <div className="flex flex-row gap-[8px] h-[720px] text-black dark:text-white">
                 <div className="flex flex-col gap-[8px] w-[70%]">
                     <div className="relative bg-white dark:bg-neutral-800 w-full h-[41%] rounded-sm">
-                        <div className="overflow-hidden h-[50%] flex justify-center items-center rounded-t-sm">
+                        <div className="overflow-hidden h-[100%] flex justify-center items-center rounded-sm">
                             <img src={heroBanner3} alt="" />
                         </div>
-                        <div className="p-1 bg-white dark:bg-neutral-800 absolute top-28 left-10 flex justify-center items-center rounded-full overflow-hidden max-h-[100px] max-w-[100px]">
+                        <div className="p-1 z-20 bg-white dark:bg-neutral-800 absolute bottom-8 left-10 flex justify-center items-center rounded-full overflow-hidden max-h-[100px] max-w-[100px]">
                             <img src={MyImage} alt="my image" className="w-[100%] h-[100%] rounded-full"/>
                         </div>
-                        <div className="flex flex-col max-w-[30%] gap-3 mx-[150px] py-[10px]">
+                        <div className="flex flex-col gap-3 text-white mx-[150px] py-[10px] absolute bottom-11 z-20">
                             <div className="flex gap-2">
                                 <LocationIcon/>
-                                <h6>Sampaloc Manila City</h6>
+                                <h6>Metro Manila, Philippines</h6>
                             </div>
-                            <button type="button" className="flex justify-center items-center gap-4 min-w-[100px] w-[60%] py-1 border border-gray-400 rounded-full px-3">
+                            <button type="button" className="flex justify-center text-white w-[100%] max-w-[140px] items-center gap-4 py-1 border border-blue-400 rounded-md px-3">
                                 <MessageIcon/>
                                 Message
                             </button>
                         </div>
+                        <div className="bg-black/10 dark:bg-black/30 bottom-0 left-0 absolute w-full h-[50%] z-10 backdrop-blur-xs"/>
                     </div>
                     
                     <motion.div className="relative overflow-hidden bg-white dark:bg-neutral-800 px-5 pt-4 pb-20 rounded-sm"
@@ -70,12 +71,12 @@ function About() {
                         </span>
                     </motion.div>
                     
-                    <footer className="flex justify-center bg-white dark:bg-neutral-800 p-2 rounded-sm h-[25%]">
+                    <footer className="bg-white dark:bg-neutral-800 p-2 rounded-sm h-[25%]">
                         <Footer/>
                     </footer>
                 </div>
                 <div className="w-[30%] flex flex-col gap-[8px]">
-                    <div className="h-[50%] bg-white dark:bg-neutral-800 rounded-sm p-2">
+                    <div className="bg-white dark:bg-neutral-800 rounded-sm p-2">
                         <Education/>
                     </div>
                     <div className="min-h-[300px] bg-white dark:bg-neutral-800 rounded-sm p-2">

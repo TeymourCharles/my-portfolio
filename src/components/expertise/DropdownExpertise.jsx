@@ -6,7 +6,7 @@ function DropdownExpertise ({ title, text, isExpand, toggle }) {
      const expand = isExpand;
 
     return (
-        <div className="px-3 flex flex-col gap-3">
+        <div className="px-3 pt-2 flex flex-col gap-2">
             <div onClick={toggle} className="flex justify-between items-center cursor-pointer">
                 <div>
                     <h6 className="font-semibold">{title}</h6>
@@ -39,6 +39,7 @@ function DropdownExpertise ({ title, text, isExpand, toggle }) {
                 >
                 {text}
             </motion.p>
+          
         </div>
     )
 }

@@ -20,21 +20,22 @@ function Navbar() {
                 <h6>Full-stack Developer</h6>
             </div>
             <div className="flex justify-center">
-                <button type="button" className="flex justify-center active:scale-95 duration-200 gap-2 border rounded-lg py-[5px] px-2 w-[100%] min-w-[100px] border-black dark:border-white text-black dark:text-white">
-                    <DownloadIcon size={18} className="text-black dark:text-white"/>
+                <button type="button" className="flex justify-center bg-gradient-to-r from-blue-700 to-blue-400 transition-all duration-500
+             hover:from-blue-500 hover:to-blue-300 active:scale-95 gap-2 rounded-lg py-[5px] px-2 w-[100%] min-w-[100px] border-black dark:border-white text-white">
+                    <DownloadIcon size={18} className="text-white"/>
 
                     Download Resume
                 </button>
             </div>
             <div className="">
                 <div className="">
-                        <NavLink to="/" className={({isActive}) => `block py-2 px-2 w-full rounded-sm ${isActive && "bg-iceGray dark:bg-neutral-600 font-medium"}`}>Hero</NavLink>
+                        <NavLink to="/" className={({isActive}) => `block py-2 px-2 w-full rounded-sm ${isActive && "bg-iceGray dark:bg-neutral-600 font-medium text-blue-500 dark:text-blue-400"}`}>Hero</NavLink>
                 </div>
                 <div className="">
-                        <NavLink to="/about" className={({isActive}) => `block py-2 px-2 w-full rounded-sm ${isActive && "bg-iceGray dark:bg-neutral-600 font-medium"}`}>About</NavLink>
+                        <NavLink to="/about" className={({isActive}) => `block py-2 px-2 w-full rounded-sm ${isActive && "bg-iceGray dark:bg-neutral-600 font-medium text-blue-500 dark:text-blue-400"}`}>About</NavLink>
                 </div>
                 <div className="">
-                        <NavLink to="/projects" className={({isActive}) => `block py-2 px-2 w-full rounded-sm ${isActive && "bg-iceGray dark:bg-neutral-600 font-medium"}`}>Projects</NavLink>
+                        <NavLink to="/projects" className={({isActive}) => `block py-2 px-2 w-full rounded-sm ${isActive && "bg-iceGray dark:bg-neutral-600 font-medium text-blue-500 dark:text-blue-400"}`}>Projects</NavLink>
                 </div>
             </div>
             <div className="absolute bottom-0 right-0">

@@ -11,6 +11,7 @@ import GithubIcon from "../assets/icons/github-icon.png";
 import VueIcon from "../assets/icons/vue-icon.png";
 import HtmlIcon from "../assets/icons/html-icon.png";
 import TypescriptIcon from "../assets/icons/typescript-icon.png";
+import BootstrapIcon from "../assets/icons/bootstrap.png"; 
 
 import FigmaIcon from "../assets/icons/figma-icon.png";
 import CssIcon from "../assets/icons/css-icon.png";
@@ -19,6 +20,15 @@ import JsIcon from "../assets/icons/js-icon.png";
 import TailwindIcon from "../assets/icons/tailwind-icon.png";
 import ViteIcon from "../assets/icons/vite-icon.png";
 import PostmanIcon from "../assets/icons/postman-icon.png";
+import DockerIcon from "../assets/icons/docker.png"
+
+const firstArray = [
+    ReactIcon, LaravelIcon, PhpIcon, GithubIcon, VueIcon, HtmlIcon, TypescriptIcon, BootstrapIcon
+]
+
+const secondArray = [
+    FigmaIcon, CssIcon, MysqlIcon, JsIcon, TailwindIcon, ViteIcon, PostmanIcon, DockerIcon
+]
 
 function SkillSet () {
     return (
@@ -42,13 +52,11 @@ function SkillSet () {
                         }}
                        
                         >
-                        <SwiperSlide><img src={ReactIcon} className="w-[30px] h-[30px]" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={LaravelIcon} className="w-[30px] h-[30px]" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={PhpIcon} className="w-[30px] h-[30px]" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={GithubIcon} className="w-[30px] h-[30px]" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={VueIcon} className="w-[30px] h-[30px]" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={HtmlIcon} className="w-[30px] h-[30px]" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={TypescriptIcon} className="w-[30px] h-[30px]" alt="" /></SwiperSlide>
+                        {firstArray.map((item, index) => (
+                            <SwiperSlide key={index}><img src={item} className="w-[30px] h-[30px]" alt="" /></SwiperSlide>
+                        ))}
+                        
+                        
                     </Swiper>
                 </div>
                 <div className="">
@@ -60,13 +68,11 @@ function SkillSet () {
                         autoplay={{ delay: 1000, disableOnInteraction: false }}
                         
                         >
-                        <SwiperSlide><img src={FigmaIcon} className="w-[43px] h-[33px]" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={CssIcon} className="w-[33px] h-[33px]" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={MysqlIcon} className="w-[33px] h-[28px]" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={JsIcon} className="w-[33px] h-[33px]" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={TailwindIcon} className="w-[33px] h-[26px]" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={ViteIcon} className="w-[33px] h-[33px]" alt="" /></SwiperSlide>
-                        <SwiperSlide><img src={PostmanIcon} className="w-[33px] h-[33px]" alt="" /></SwiperSlide>
+                        {secondArray.map((item, index) => (
+                            <SwiperSlide key={index}><img src={item} className="w-[30px] h-[30px]" alt="" /></SwiperSlide>
+                        ))}
+                        
+                        
                     </Swiper>
                 </div>
                 <div className="absolute z-10 inset-0 pointer-events-none bg-gradient-to-l to-white dark:to-neutral-800 via-transparent via-80% from-transparent dark:from-transparent w-[100%]"/>

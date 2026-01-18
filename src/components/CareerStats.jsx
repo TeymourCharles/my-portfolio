@@ -11,11 +11,11 @@ function CareerStats() {
                 <StatsIcon size={25} className="text-black dark:text-white"/>
                 <h5>Career Stats</h5>
             </div>
-            <div className="grid grid-cols-3 gap-5 w-[60%] h-[90%]">
+            <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 w-full h-[90%] pt-1">
                 <CardCareerStats icon={YearsIcon} number="1 year" text="Experience" gap={2}/>
-                <CardCareerStats icon={ProjectsIcon} number="6" text="Projects" gap={10}/>
+                <CardCareerStats icon={ProjectsIcon} number="8" text="Projects" gap={10}/>
                 <CardCareerStats icon={TechnologyIcon} number="20" text="Technologies" gap={10}/>
-               
+                <CardCareerStats icon={TechnologyIcon} number="6+" text="Features Built" gap={10}/>
             </div>
            
         </div>

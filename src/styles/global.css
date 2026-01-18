@@ -5,6 +5,8 @@
 @theme {
   --color-iceGray: #EBF1F4;
 }
+
+
 @layer base {
   html {
     @apply text-[11px] md:text-[14px]; /* default text size for body */
