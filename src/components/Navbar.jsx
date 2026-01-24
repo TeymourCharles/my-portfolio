@@ -1,13 +1,33 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 
 
 import MyImage from '../assets/images/my-profile.jpg'
 import ResumeIcon from "../assets/icon_components/ResumeIcon";
 import DownloadIcon from "../assets/icon_components/DownloadIcon";
-
+import ResumePreviewModal from "./navbar/ResumePreviewModal";
 
 function Navbar() {
+    const [isResumeOpen, setIsResumeOpen] = useState(false);
+
+    const handleDownloadResume = () => {
+        const link = document.createElement("a");
+        link.href = "/public/TeymourCharles-Resume.pdf"; // path from public folder
+        link.download = "TeymourCharles-Resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
+    const handlePreviewResume = () => {
+        setIsResumeOpen(true);
+    };
+
+    const handleCloseResume = () => {
+        setIsResumeOpen(false);
+    };
+
     return (
         <nav className="flex flex-col gap-2 w-full relative h-full dark:text-white">
             <div className="flex justify-center">
@@ -22,13 +42,14 @@ function Navbar() {
             </div>
             <div className="flex justify-center">
                 <div className="flex justify-center w-[100%] max-w-[200px]">
-                        <button type="button" className="flex justify-center items-center bg-gradient-to-r to-blue-700 from-blue-400 transition-all duration-500
+                        <button onClick={handlePreviewResume} type="button" className="flex justify-center items-center bg-gradient-to-r to-blue-700 from-blue-400 transition-all duration-500
                     hover:to-blue-600 hover:from-blue-300 gap-2 rounded-l-lg py-[4px] px-2 w-full  border-black dark:border-white text-white">
                             <ResumeIcon size={18} className="text-white"/>
 
                             Preview Resume
                         </button>
-                        <button className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-r-lg px-3 hover:from-blue-500 to-blue-700">
+                        <ResumePreviewModal isOpen={isResumeOpen} close={handleCloseResume}/>
+                        <button onClick={handleDownloadResume} className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-r-lg px-3 hover:from-blue-500 to-blue-700">
                             <DownloadIcon size={17} className="text-white"/>
                         </button>
                 </div>

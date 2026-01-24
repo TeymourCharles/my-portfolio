@@ -33,7 +33,7 @@ function Hero() {
     return (
     <div className="flex flex-row gap-[8px] h-full text-black dark:text-white">
         <div className="flex flex-col gap-[8px] w-[70%] min-h-screen">
-            <div className="relative bg-white dark:bg-neutral-800 w-full h-[44%] max-h-[300px] rounded-sm flex justify-center items-center overflow-hidden">
+            <div className="relative bg-white dark:bg-neutral-800 w-full h-[44%] max-h-[300px] rounded-sm flex justify-center items-center overflow-hidden animate-fade-in">
                 <Swiper
                     modules={[Autoplay]}
                     spaceBetween={0}
@@ -73,18 +73,18 @@ function Hero() {
                         />
                 </div>
             </div>
-            <div className="bg-white dark:bg-neutral-800 py-[15px] px-[20px] rounded-sm p-2">
+            <div className="bg-white dark:bg-neutral-800 py-[15px] px-[20px] rounded-sm p-2 animate-fade-in">
                 <CareerStats/>
             </div>
-            <footer className="bg-white dark:bg-neutral-800 p-2 rounded-sm h-[25%]">
+            <footer className="bg-white dark:bg-neutral-800 p-2 rounded-sm h-[25%] animate-fade-in">
                 <Footer/>
             </footer>
         </div>
         <div className="flex flex-col gap-[8px] w-[30%]">
-            <div className="h-auto bg-white dark:bg-neutral-800 rounded-sm p-2">
+            <div className="h-auto bg-white dark:bg-neutral-800 rounded-sm p-2 animate-fade-in">
                 <SkillSet/>
             </div>
-            <div className="h-auto bg-white dark:bg-neutral-800 rounded-sm p-2">
+            <div className="h-auto bg-white dark:bg-neutral-800 rounded-sm p-2 animate-fade-in">
                 <Expertise/>
             </div>
         </div>

@@ -32,7 +32,7 @@ function About() {
      
             <div className="flex flex-row gap-[8px] h-[720px] text-black dark:text-white">
                 <div className="flex flex-col gap-[8px] w-[70%]">
-                    <div className="relative bg-white dark:bg-neutral-800 w-full h-[41%] rounded-sm">
+                    <div className="relative bg-white dark:bg-neutral-800 w-full h-[41%] rounded-sm animate-fade-in">
                         <div className="overflow-hidden h-[100%] flex justify-center items-center rounded-sm">
                             <img src={heroBanner3} alt="" />
                         </div>
@@ -44,15 +44,20 @@ function About() {
                                 <LocationIcon/>
                                 <h6>Metro Manila, Philippines</h6>
                             </div>
-                            <button type="button" className="flex justify-center active:text-blue-400 active:scale-95 duration-200 text-white w-[100%] max-w-[140px] items-center gap-4 py-1 border border-blue-400 rounded-md px-3">
+                            <a 
+
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=villanuevateymour27@gmail.com&su=Portfolio%20Inquiry&body=Hi%20Teymour,%0A%0AI%20saw%20your%20portfolio%20and%20..."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex justify-center active:text-blue-400 active:scale-95 duration-200 text-white w-[100%] max-w-[140px] items-center gap-4 py-1 border border-blue-400 rounded-md px-3">
                                 <MessageIcon/>
                                 Message
-                            </button>
+                            </a>
                         </div>
                         <div className="bg-black/10 dark:bg-black/30 bottom-0 left-0 absolute w-full h-[50%] z-10 backdrop-blur-xs"/>
                     </div>
                     
-                    <motion.div className="relative overflow-hidden bg-white dark:bg-neutral-800 px-5 pt-4 pb-20 rounded-sm"
+                    <motion.div className="relative overflow-hidden bg-white dark:bg-neutral-800 px-5 pt-4 pb-20 rounded-sm animate-fade-in"
                         initial={false}
                         animate={{ maxHeight: isExpanded ? 400 : 120 }}
                         transition={{ duration: 0.4, ease: "easeInOut" }}
@@ -71,15 +76,15 @@ function About() {
                         </span>
                     </motion.div>
                     
-                    <footer className="bg-white dark:bg-neutral-800 p-2 rounded-sm h-[25%]">
+                    <footer className="bg-white dark:bg-neutral-800 p-2 rounded-sm h-[25%] animate-fade-in">
                         <Footer/>
                     </footer>
                 </div>
                 <div className="w-[30%] flex flex-col gap-[8px]">
-                    <div className="bg-white dark:bg-neutral-800 rounded-sm p-2">
+                    <div className="bg-white dark:bg-neutral-800 rounded-sm p-2 animate-fade-in">
                         <Education/>
                     </div>
-                    <div className="min-h-[300px] bg-white dark:bg-neutral-800 rounded-sm p-2">
+                    <div className="min-h-[300px] bg-white dark:bg-neutral-800 rounded-sm p-2 animate-fade-in">
                         <Experience/>
                     </div>
                 </div>
