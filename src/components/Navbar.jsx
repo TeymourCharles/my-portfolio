@@ -13,7 +13,7 @@ function Navbar() {
 
     const handleDownloadResume = () => {
         const link = document.createElement("a");
-        link.href = "/public/TeymourCharles-Resume.pdf"; // path from public folder
+        link.href = "/TeymourCharles-Resume.pdf"; // path from public folder
         link.download = "TeymourCharles-Resume.pdf";
         document.body.appendChild(link);
         link.click();

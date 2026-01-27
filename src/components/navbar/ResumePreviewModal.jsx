@@ -35,9 +35,10 @@ const [show, setShow] = useState(false);
 
                 {/* Resume Preview */}
                 <iframe
-                    src="/public/TeymourCharles-Resume.pdf"
+                    src="/TeymourCharles-Resume.pdf"
                     title="Resume Preview"
                     className="w-full h-full"
+                    loading="lazy"
                 />
                 </div>
         </div>
