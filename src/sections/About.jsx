@@ -1,45 +1,31 @@
 import Education from "../components/Education";
 import Footer from "../components/Footer";
 import Experience from "../components/Experience";
-import { motion } from "motion/react";
-
-import { useState } from "react";
-
 import LocationIcon from "../assets/icon_components/LocationIcon"
 import MessageIcon from "../assets/icon_components/MessageIcon";
 import heroBanner3 from "../assets/images/hero-banner/pexels-luis-gomes-166706-546819.jpg";
 import MyImage from '../assets/images/my-profile.jpg'
 
+import { motion } from "motion/react";
+import { aboutMe } from "../constants";
+import { useState } from "react";
+
 
 function About() {
     const [isExpanded, setIsExpanded] = useState(false);
-
-    const text = `I’m a Frontend Developer with hands-on experience in React and Vue, 
-                passionate about building responsive, user-friendly web applications that 
-                solve real-world problems. Beyond frontend development, I have experience 
-                creating backend APIs, integrating databases, and ensuring smooth communication 
-                between client and server. I am also comfortable deploying projects, setting up 
-                environments, and managing applications in live production, which gives me a full-stack
-                perspective on web development.
-
-                I enjoy working on scalable solutions, optimizing performance, and writing clean, 
-                maintainable code. I thrive in collaborative environments, learning from real-world 
-                challenges, and continuously improving my skills by exploring new frameworks, tools, and 
-                technologies. My goal is to create web applications that not only look great but also deliver
-                    seamless functionality and performance for both users and businesses.`
-    const limit = 290;
+   
     return (
      
-            <div className="flex flex-row gap-[8px] h-[720px] text-black dark:text-white">
-                <div className="flex flex-col gap-[8px] w-[70%]">
+            <div className="flex xl:flex-row flex-col gap-[8px] xl:h-[720px] text-black dark:text-white">
+                <div className="flex flex-col gap-[8px] xl:w-[70%] w-[100%]">
                     <div className="relative bg-white dark:bg-neutral-800 w-full h-[41%] rounded-sm animate-fade-in">
-                        <div className="overflow-hidden h-[100%] flex justify-center items-center rounded-sm">
+                        <div className="overflow-hidden xl:h-[100%] sm:h-[200px] h-auto flex justify-center items-center rounded-sm">
                             <img src={heroBanner3} alt="" />
                         </div>
                         <div className="p-1 z-20 bg-white dark:bg-neutral-800 absolute bottom-8 left-10 flex justify-center items-center rounded-full overflow-hidden max-h-[100px] max-w-[100px]">
                             <img src={MyImage} alt="my image" className="w-[100%] h-[100%] rounded-full"/>
                         </div>
-                        <div className="flex flex-col gap-3 text-white mx-[150px] py-[10px] absolute bottom-11 z-20">
+                        <div className="flex flex-col gap-3 text-white lg:mx-[150px] ml-[140px] py-[10px] absolute bottom-11 z-20">
                             <div className="flex gap-2">
                                 <LocationIcon/>
                                 <h6>Metro Manila, Philippines</h6>
@@ -64,7 +50,7 @@ function About() {
                         >
                         <h5 className="pb-2">About</h5>
                         <p className="leading-relaxed">
-                            {text}
+                            {aboutMe}
                             
                         </p>
                         <span
@@ -76,11 +62,11 @@ function About() {
                         </span>
                     </motion.div>
                     
-                    <footer className="bg-white dark:bg-neutral-800 p-2 rounded-sm h-[25%] animate-fade-in">
+                    <footer className="bg-white dark:bg-neutral-800 p-2 rounded-sm lg:h-[25%] animate-fade-in">
                         <Footer/>
                     </footer>
                 </div>
-                <div className="w-[30%] flex flex-col gap-[8px]">
+                <div className="xl:w-[30%] w-[100%] flex flex-col gap-[8px]">
                     <div className="bg-white dark:bg-neutral-800 rounded-sm p-2 animate-fade-in">
                         <Education/>
                     </div>

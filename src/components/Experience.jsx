@@ -1,17 +1,11 @@
 import AcdWhite from "../assets/images/Experience/acdi-logo.webp"
 import AcdBlack from "../assets/images/Experience/acd-logo.png";
 import ExperienceIcon from "../assets/icon_components/ExperienceIcon"
+import DateIcon from "../assets/icon_components/DateIcon";
+import { experience } from "../constants";
+
 import { useState } from "react";
 import { motion } from "motion/react";
-import DateIcon from "../assets/icon_components/DateIcon";
-
-const text = `During my time at Authentic Caps Distribution Inc., I significantly developed my technical 
-and professional skills by working on real-world corporate and internal systems. I strengthened my front-end 
-expertise by building responsive, reusable UI components and improving user experience across multiple platforms,
- while also gaining full-stack exposure through implementing REST APIs, authentication, and database logic.
-  I expanded my understanding of modern web architecture by working with CMS integration, containerization using Docker,
-   and tools such as Kong, Kafka, and Temporal. Through close collaboration with stakeholders and continuous hands-on development, 
-   I improved my problem-solving, system design, and ability to deliver scalable, production-ready web solutions.`
 
 function Experience () {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -62,7 +56,7 @@ function Experience () {
                             >
                             
                             <p className="leading-relaxed">
-                                {text}
+                                {experience}
                                 
                             </p>
                             <span

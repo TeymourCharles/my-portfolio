@@ -1,22 +1,16 @@
-import { useEffect, useState } from "react";
+
+import 'swiper/css';
 import CareerStats from "../components/CareerStats";
 import SkillSet from "../components/Skillset";
 import Expertise from "../components/Expertise";
 import Footer from "../components/Footer";
+import TextType from "../components/TextType";
 import DateIcon from "../assets/icon_components/DateIcon";
+
+import { herobanner } from "../constants";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from "swiper/modules"; 
-import 'swiper/css';
-import TextType from "../components/TextType";
-import heroBanner1 from "../assets/images/hero-banner/pexels-bradleyhook-123335.jpg"
-import heroBanner2 from "../assets/images/hero-banner/pexels-lastly-699122.jpg";
-import heroBanner3 from "../assets/images/hero-banner/pexels-luis-gomes-166706-546819.jpg";
 
-const herobanner = [
-    heroBanner1,
-    heroBanner2,
-    heroBanner3
-]
 function Hero() {
     const date = new Date();
     const options = { month: "long", day: "numeric", year: "numeric" };
@@ -31,8 +25,8 @@ function Hero() {
     };
 
     return (
-    <div className="flex flex-row gap-[8px] h-full text-black dark:text-white">
-        <div className="flex flex-col gap-[8px] w-[70%] min-h-screen">
+    <div className="flex xl:flex-row flex-col gap-[8px] h-full text-black dark:text-white">
+        <div className="flex flex-col gap-[8px] xl:w-[70%] w-[100%] min-h-screen">
             <div className="relative bg-white dark:bg-neutral-800 w-full h-[44%] max-h-[300px] rounded-sm flex justify-center items-center overflow-hidden animate-fade-in">
                 <Swiper
                     modules={[Autoplay]}
@@ -48,7 +42,7 @@ function Hero() {
                     
                     >
                         {herobanner.map((item, index) => (
-                            <SwiperSlide key={index} className=""><img src={item} className="max-w-full max-h-full object-contain" alt="" /></SwiperSlide>
+                            <SwiperSlide key={index} className=""><img src={item} className="w-full h-full min-h-[300px] object-cover" alt="" /></SwiperSlide>
                         ))}
                     
                     
@@ -76,15 +70,15 @@ function Hero() {
             <div className="bg-white dark:bg-neutral-800 py-[15px] px-[20px] rounded-sm p-2 animate-fade-in">
                 <CareerStats/>
             </div>
-            <footer className="bg-white dark:bg-neutral-800 p-2 rounded-sm h-[25%] animate-fade-in">
+            <footer className="bg-white dark:bg-neutral-800 p-2 rounded-sm lg:h-[25%] animate-fade-in">
                 <Footer/>
             </footer>
         </div>
-        <div className="flex flex-col gap-[8px] w-[30%]">
-            <div className="h-auto bg-white dark:bg-neutral-800 rounded-sm p-2 animate-fade-in">
+        <div className="flex xl:flex-col flex-row gap-[8px] xl:w-[30%] w-[100%]">
+            <div className="h-[150px] bg-white dark:bg-neutral-800 rounded-sm p-2 animate-fade-in xl:w-auto w-[50%]">
                 <SkillSet/>
             </div>
-            <div className="h-auto bg-white dark:bg-neutral-800 rounded-sm p-2 animate-fade-in">
+            <div className="h-auto bg-white dark:bg-neutral-800 rounded-sm p-2 animate-fade-in xl:w-auto w-[50%]">
                 <Expertise/>
             </div>
         </div>

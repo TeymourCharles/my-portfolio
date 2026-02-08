@@ -13,7 +13,7 @@
   }
 
   body{
-    @apply bg-iceGray dark:bg-black p-1 overflow-hidden;
+    @apply bg-iceGray dark:bg-black p-1 lg:overflow-hidden overflow-y-auto;
   }
 
   h1 {

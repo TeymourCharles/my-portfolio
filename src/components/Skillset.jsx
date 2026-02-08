@@ -1,38 +1,13 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from "swiper/modules"; 
 import 'swiper/css';
+import { firstArray, secondArray } from "../constants"
 
 import StackIcon from "../assets/icon_components/StackIcon";
 
-import ReactIcon from "../assets/icons/react-icon.png";
-import LaravelIcon from "../assets/icons/laravel-icon.png"
-import PhpIcon from "../assets/icons/php-icon.png";
-import GithubIcon from "../assets/icons/github-icon.png";
-import VueIcon from "../assets/icons/vue-icon.png";
-import HtmlIcon from "../assets/icons/html-icon.png";
-import TypescriptIcon from "../assets/icons/typescript-icon.png";
-import BootstrapIcon from "../assets/icons/bootstrap.png"; 
-
-import FigmaIcon from "../assets/icons/figma-icon.png";
-import CssIcon from "../assets/icons/css-icon.png";
-import MysqlIcon from "../assets/icons/mysql-icon.png";
-import JsIcon from "../assets/icons/js-icon.png";
-import TailwindIcon from "../assets/icons/tailwind-icon.png";
-import ViteIcon from "../assets/icons/vite-icon.png";
-import PostmanIcon from "../assets/icons/postman-icon.png";
-import DockerIcon from "../assets/icons/docker.png"
-
-const firstArray = [
-    ReactIcon, LaravelIcon, PhpIcon, GithubIcon, VueIcon, HtmlIcon, TypescriptIcon, BootstrapIcon
-]
-
-const secondArray = [
-    FigmaIcon, CssIcon, MysqlIcon, JsIcon, TailwindIcon, ViteIcon, PostmanIcon, DockerIcon
-]
-
 function SkillSet () {
     return (
-        <div className="relative h-full">
+        <div className="relative lg:h-full max-h-[100px]">
             <div className="flex gap-3">
                 <StackIcon className=""/>
                 <h5>Skill Set</h5>
