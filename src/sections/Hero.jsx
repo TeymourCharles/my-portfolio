@@ -74,11 +74,11 @@ function Hero() {
                 <Footer/>
             </footer>
         </div>
-        <div className="flex xl:flex-col flex-row gap-[8px] xl:w-[30%] w-[100%]">
-            <div className="h-[150px] bg-white dark:bg-neutral-800 rounded-sm p-2 animate-fade-in xl:w-auto w-[50%]">
+        <div className="flex flex-col gap-[8px] xl:w-[30%] w-[100%]">
+            <div className="h-[160px] bg-white dark:bg-neutral-800 rounded-sm p-2 animate-fade-in">
                 <SkillSet/>
             </div>
-            <div className="h-auto bg-white dark:bg-neutral-800 rounded-sm p-2 animate-fade-in xl:w-auto w-[50%]">
+            <div className="h-auto bg-white dark:bg-neutral-800 rounded-sm p-2 animate-fade-in">
                 <Expertise/>
             </div>
         </div>
