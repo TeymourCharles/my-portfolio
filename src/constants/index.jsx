@@ -32,7 +32,10 @@ export const projects = [
     {
         img: ticketingSystem,
         name: "Ticketing System",
-        description: "This is Ticketing system for giordano",
+        description: `Developed a Ticketing System to manage and track over 600 support tickets per month,
+        improving issue visibility, monitoring, and resolution efficiency. The system included ticket status 
+        tracking and an analytics dashboard to visualize trends, identify recurring issues, and help departments
+        make data-driven decisions to improve operational efficiency. `,
         techStack: [ 'React.js', 'Laravel', 'Tailwind', 'Mysql' ],
         link: null,
         githubLink: null
@@ -40,7 +43,11 @@ export const projects = [
     {
         img: corpWebsite,
         name: "Corporate Website",
-        description: "This is Corporate website for Authentic Caps Distribution",
+        description: `Developed and maintained a responsive corporate website supporting over 500 employees and
+        clients. The website improved access to company information, enhanced recruitment efficiency, and provided
+        a modern user experience across devices. I collaborated with stakeholders to translate business
+        requirements into reusable UI components and integrated CMS-driven content for dynamic and scalable
+        website management.`,
         techStack: [ 'React.js', 'Tailwind', 'Mysql', 'CMS' ],
         link: "https://ahci.com.ph/",
         githubLink: null
@@ -48,7 +55,11 @@ export const projects = [
     {
         img: aimsSystem,
         name: "Asset Inventory Management System",
-        description: "This is Asset Inventory Management System for New Era Cap Philippines",
+        description: `Developed a centralized Asset Inventory Management System to track and manage 
+        over 200 company assets across 9 departments. The system streamlined asset monitoring, reduced
+        manual tracking, and minimized asset loss by providing a secure and organized digital solution. 
+        I implemented REST APIs, database logic, and authentication to ensure reliable data management and 
+        seamless front-end integration.`,
         techStack: [ 'Vue.js', 'Tailwind', 'Mysql', 'laravel', 'Vuetify' ],
         link: null,
         githubLink: null
@@ -56,7 +67,10 @@ export const projects = [
     {
         img: redemptionSystem,
         name: "Redemption System",
-        description: "This is Redemption System for New Era Cap Philippines",
+        description: `Built a VIP Redemption System that allows customers to redeem reward points for 
+        exclusive products, supporting over 600 active VIP users. The system improved customer engagement
+        and loyalty by providing a smooth and user-friendly redemption experience. It included secure
+        authentication, real-time point tracking, and efficient product redemption management.`,
         techStack: [ 'Jquery', 'Tailwind', 'Mysql' ],
         link: null,
         githubLink: null
